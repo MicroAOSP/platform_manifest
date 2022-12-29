@@ -10,9 +10,9 @@
   <remote  name="micro"
            fetch="https://github.com/MicroAOSP"
            revision="refs/heads/main" />
-  <remote  name="lineage"
-           fetch="https://github.com/LineageOS"
-           revision="refs/heads/lineage-20" />
+  <remote  name="aospa"
+           fetch="https://github.com/AOSPA"
+           revision="refs/heads/topaz" />
   <default revision="refs/tags/android-13.0.0_r16"
            remote="aosp"
            sync-j="4" />
@@ -84,7 +84,6 @@
   <project path="device/google/coral-kernel" name="device/google/coral-kernel" groups="device,coral,generic_fs" clone-depth="1" />
   <project path="device/google/coral-sepolicy" name="device/google/coral-sepolicy" groups="device,coral,generic_fs" />
   <project path="device/google/gs101" name="device_google_gs101" groups="device,slider,bluejay,pdk-gs-arm" remote="micro" />
-  <project path="kernel/google/gs101/private/gs-google" name="android_kernel_google_gs101" groups="device,slider,bluejay,pdk-gs-arm" remote="lineage" />
   <project path="device/google/gs201" name="device/google/gs201" groups="device,cloudripper" />
   <project path="device/google/gs201-sepolicy" name="device/google/gs201-sepolicy" groups="device,cloudripper" />
   <project path="device/google/gs-common" name="device/google/gs-common" groups="device,slider,bluejay,pdk-gs-arm" />
@@ -92,6 +91,7 @@
   <project path="device/google/pantah-sepolicy" name="device/google/pantah-sepolicy" groups="device,cloudripper" />
   <project path="device/google/pantah-kernel" name="device/google/pantah-kernel" groups="device,cloudripper" clone-depth="1" />
   <project path="device/google/raviole" name="device_google_raviole" groups="device,slider,pdk-gs-arm" remote="micro" />
+  <project path="device/google/raviole-kernel" name="android_device_google_raviole-kernel" groups="device,slider,pdk-gs-arm" remote="aospa" />
   <project path="device/google/redbull" name="device/google/redbull" groups="device,redbull" />
   <project path="device/google/redbull-kernel" name="device/google/redbull-kernel" groups="device,bramble,redfin" clone-depth="1" />
   <project path="device/google/redbull-sepolicy" name="device/google/redbull-sepolicy" groups="device,redbull" />
